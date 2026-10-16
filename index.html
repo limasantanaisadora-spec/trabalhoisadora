@@ -1,43 +1,112 @@
-
-  header{
-   background-color: rgb(136, 136, 196);
-    color: white;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 16px;
-    border: 5px solid #1865b8;
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cachorra</title>
+<style>
+header{
+background-color: rgb(255, 41, 184);
+color: beige;
+text-align: center;
+max-width:800px;
+margin: 0 auto;
+padding:16px;
   }
   main{
-    background-color: rgb(255, 127, 202);
-    color: bisque;
-    text-align: center;
+    background-color: rgb(53, 90, 255);
+    color: #000;
     max-width: 800px;
-    margin: 0 auto;
+    margin:0 auto;
+    padding: 16px;
   }
-  img{
-    width: 80px;
-    height: 80px;
-  }
+article{
+display: flex;
+}
+img{
+  width: 80px;
+  height: 80px;
+}
+.artigo-autor{
+  font-weight: bold;
+}
 </style>
-  <nav>
-    <h1>Meu primeiro Site de Programação e IA</h1>
-    <nav>
-    <a href="#">inicio</a>
-</nav>
-  <title>Minha cachorra</title>
 </head>
-  <body>
-  <header>
-<h1>Meu primeiro trabalho</h1>
-    <p>Oii,fiz esse site para contar sobre a minha história com a minha cachorra,ganhei a mabel no meio desse ano de uma pessoa que era importante, ela chegou abanando o rabinho e me lambendo, ela é uma cachorra bagunçeira e carinhosa, gosta de deitar nos meus pés em todos os cantos que eu vou, essa semana ela fugiu e deu um susto em todo mundo, sai procurar ela com uma amiga e quando estava chegando em casa os meus amigos acharam ela e me devolveram.
-    <p>Aqui vai ficar informações sobre minha cachorra</p>
-  </header>
-    <main>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaEK_5SCJJL3QI1Ha3MEmFfM09fZ0cE6vjijhYXeBing&s" alt="cachorra">
-    <h1>Uma história sobre minha cachora</h1>
-    <p>Minha cachorra se chama mabel, sendo caramelo</p>
-    </main>
-    <footer>Projeto criado por isa</footer>
-  </body>
+<body>
+<header>
+ <h1>Meu blog sobre minha cachorra</h1>
+ <p>Vou compartilhar informaçoẽs sobre minha cachorra</p>
+</header>
+<main>
+  <article>
+    <img scr="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxUmUco1mpKKsyeydbQMxKc3a7e1h8uzU0vMlxglNWhw&s=10"alt="cachorra">
+    <div>
+   <h2>Ela é bagunçeira</h2>
+   <p class="artigo-autor">Por Isadora</p>
+   <p>Esse blog é sobre minha cachorra vesguinha, eu ganhei de presente e ela é muito carinhosa</p>
+   <button>❤️<span>0</span></button>
+   <button>✨<span>0</span></button>
+    </div>
+</article>
+  <article>
+    <img scr="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxUmUco1mpKKsyeydbQMxKc3a7e1h8uzU0vMlxglNWhw&s=10"alt="cachorra">
+    <div>
+   <h2>Ela é bagunçeira</h2>
+   <p class="artigo-autor">Por Isadora</p>
+   <p>Esse blog é sobre minha cachorra vesguinha, eu ganhei de presente e ela é muito carinhosa</p>
+   <button>❤️<span>0</span></button>
+   <button>✨<span>0</span></button>
+    </div>
+</article>
+</main>
+</body>
+<script>
+const botoes= document.querySelectorAll("button");
+botoes.forEach(function (botao){
+let curtiu= false;
+botao.addEventListener("click",botaoClicado);
+function botaoClicado(){
+   console.log("fui clicado");
+let texto= botao.querySelector("span");
+if(curtiu=== false){
+texto.textContent++;
+curtiu=true;
+}else{
+texto.textContent--;
+curtiu=false;
+}
+}
+})
+</script>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
